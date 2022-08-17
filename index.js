@@ -52,6 +52,10 @@ order(2000, () =>
   })
   .then(() => {
     return order(2000, () => console.log("The ice cream is ready. Enjoy!"));
+  })
+
+  .catch(() => {
+    console.log("Customer has left");
   });
 
 // console.log(stocks.fruits[1])
